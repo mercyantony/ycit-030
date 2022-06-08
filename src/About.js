@@ -1,8 +1,13 @@
+import { useLocation } from "react-router-dom"
 
 export function About() {
+    const location = useLocation()
 
+    console.log(location.pathname) // '/about'
 
-    return <span>This is the About page</span>
-
-
+    return (
+        <>
+            <h1>The about page is on: {location.pathname}</h1>
+        </>
+    )
 }

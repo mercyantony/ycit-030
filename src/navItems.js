@@ -14,9 +14,10 @@ export const navbarItems = [
         name: "cart",
         label: "Cart",
     },
+
     {
-        key: "navbar-item-about",
-        name: "about",
-        label: "About",
+        key: "navbar-item-blogPost",
+        name: "/blog/:postSlug",
+        label: "BlogPost",
     },
 ]

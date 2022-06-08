@@ -1,5 +1,6 @@
 import { Link, Route, Routes } from "react-router-dom"
 import { About } from "./About"
+import { BlogPost } from "./BlogPost"
 import { Cart } from "./Cart"
 import { navbarItems } from "./navItems"
 import { Products } from "./Products"
@@ -33,6 +34,7 @@ export function App() {
             <div id="app-body">
                 <Routes>
                     <Route path="/" element={<div>Home</div>} />
+                    <Route path="/blog/:postSlug" element={<BlogPost />} />
                     <Route path="products" element={<Products />} />
                     <Route path="about" element={<About />} />
                     <Route path="cart" element={<Cart />} />
